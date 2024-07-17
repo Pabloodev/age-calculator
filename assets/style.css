@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    background-color: hsl(0, 0%, 94%);
+}
+
+main {
+    max-width: 100%;
+    background-color: white;
+    border-bottom-right-radius: 200px;
+    width: 840px;
+    padding: 3vw;
+    position: relative;
+}
+
+.input-container {
+    max-width: 100%;
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-container li {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 7px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    font-size: clamp(22px, 3vw, 30px);
+    max-width: 100%;
+    width: 10vw;
+    min-width: 120px;
+    font-weight: 600;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+button {
+    position: absolute;
+    right: 70px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: none;
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+}
+
+.result {
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 95px;
+    text-decoration: wavy;
+    margin-top: 100px;
+}
+
+.result div {
+    display: flex;
+    gap: 15px
+}
+
+.result span {
+    color: hsl(259, 100%, 65%);
+    font-size: clamp(90px, 30vw, 100px);
+    font-weight: 700;
+}
+
+.result p {
+    font-size: clamp(48px, 13vw, 80px);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.input-error {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.label-error {
+    color:hsl(0, 100%, 67%);
+    font-weight: 600;
+}
+
+.error {
+    display: none;
+}
+
+.hidden {
+    color: hsl(0, 100%, 67%);
+    margin-top: 10px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    .result {
+        margin-top: 140px;
+    }
+
+    .input-container {
+        justify-content: center;
+    }
+}

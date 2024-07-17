@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Age calculator | pablodev</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="main.js"></script>
+
+</head>
+<body>
+  <main class="calculator">
+
+    <ul class="input-container">
+      <li>
+        <label class ="day">DAY</label>
+        <input type="number" id="day" placeholder="DD">
+        <span class="day-error | hidden | error">
+          Must be a valid day
+        </span>
+      </li>
+      <li>
+        <label for="month">MONTH</label>
+        <input type="number" id="month" placeholder="MM">
+        <span class="month-error | hidden | error">Must be a valid month</span>
+      </li>
+      <li>
+        <label for="year">YEAR</label>
+        <input type="number" id="year" placeholder="YYYY">
+        <span class="year-error | hidden | error ">Must be in the past</span>
+      </li>
+    </ul>
+
+    <button>
+        <img src="assets/images/icon-arrow.svg" alt="Button to calculate the age">
+    </button>
+
+    <div class="result">
+      <div><span class="number-result" id="year-result">--</span><p>years</p></div>
+      <div><span class="number-result" id="month-result">--</span><p>months</p></div>
+      <div><span class="number-result" id="day-result">--</span><p>days</p></div>
+    </div>
+  </main>
+</body>
+</html>
