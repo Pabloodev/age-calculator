@@ -89,10 +89,11 @@ button.addEventListener('click', () => {
         numbers[2].textContent = dateBirth.days;
 
         button.style.backgroundColor = 'black';
-    }
 
         button.addEventListener('click', () => {
             location.reload();
         })
+    }
+  
 });
 
