@@ -51,7 +51,7 @@ label {
 
 input {
     border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(0, 0, 0, 0.726);
     font-size: clamp(22px, 3vw, 30px);
     max-width: 100%;
     width: 10vw;
@@ -60,6 +60,12 @@ input {
     padding: 15px;
     margin-top: 5px;
 }
+
+input:focus {
+    border: 3px solid hsl(259, 100%, 65%);
+    outline: none; /* Opcional: remove o contorno padrão do navegador */
+} 
+
 
 button {
     position: absolute;
